@@ -1,3 +1,5 @@
+//Person Class for Client and Employee to inherit from
+
 #pragma once
 #include <iostream>
 #include <string>
