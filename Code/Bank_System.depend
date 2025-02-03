@@ -19,20 +19,32 @@
 1738595175 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\validation.cpp
 	"Validation.h"
 
-1738602880 source:d:\route\bank_system\code\main.cpp
+1738607820 source:e:\route\bank system project\bank_system\code\main.cpp
 	<iostream>
 	<string>
 	"Person.h"
+	"Client.h"
 
-1738602880 d:\route\bank_system\code\include\person.h
+1738595753 e:\route\bank system project\bank_system\code\include\person.h
 	<string>
 
-1738602880 source:d:\route\bank_system\code\src\person.cpp
+1738597508 e:\route\bank system project\bank_system\code\include\client.h
+	"Person.h"
+
+1738601909 source:e:\route\bank system project\bank_system\code\src\person.cpp
 	<iostream>
 	"Person.h"
 	"Validation.h"
 
-1738602880 d:\route\bank_system\code\include\validation.h
+1738601909 e:\route\bank system project\bank_system\code\include\validation.h
 	<iostream>
 	<string>
+
+1738595754 source:e:\route\bank system project\bank_system\code\src\validation.cpp
+	"Validation.h"
+
+1738607019 source:e:\route\bank system project\bank_system\code\src\client.cpp
+	<iostream>
+	"Client.h"
+	"Validation.h"
 
