@@ -54,7 +54,7 @@ class Validation
             return true;
         }
 
-        static bool checkBal(string balance)
+        static bool checkBal(double balance)
         {
             if (balance < 1500)
             {
@@ -64,7 +64,7 @@ class Validation
             return true;
         }
 
-        static bool checkSal(string salary)
+        static bool checkSal(double salary)
         {
             if (salary < 5000)
             {
