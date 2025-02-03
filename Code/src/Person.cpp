@@ -10,8 +10,10 @@
 
 	Person::Person(string name, string pass, string ques, string ans, int id, int age)
 	{
-		this->name = name;
-		this->pass = pass;
+		if (Validation::checkName(name))
+            this->name = name;
+		if (Validation::checkPass(pass))
+            this->pass = pass;
 		this->ques = ques;		// Question and answer for forget password
 		this->ans = ans;		// Question and answer for forget password
 		this->id = id;
