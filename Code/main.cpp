@@ -37,6 +37,10 @@ int main()
 	c1.checkBalance();
 	c1.setBalance(600000);
 	c1.display();
-	cout << c1.getBalance();
+	cout << c1.getBalance() << endl;
 	c1.deposit(25000);
+	c1.withdraw(700000);
+	Client c2("mohamed", "122223ppoo", "geblro", "fkeng", 1598, 19, 1500);
+	c2.display();
+
 }
