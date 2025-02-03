@@ -19,3 +19,20 @@
 1738595175 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\validation.cpp
 	"Validation.h"
 
+1738602880 source:d:\route\bank_system\code\main.cpp
+	<iostream>
+	<string>
+	"Person.h"
+
+1738602880 d:\route\bank_system\code\include\person.h
+	<string>
+
+1738602880 source:d:\route\bank_system\code\src\person.cpp
+	<iostream>
+	"Person.h"
+	"Validation.h"
+
+1738602880 d:\route\bank_system\code\include\validation.h
+	<iostream>
+	<string>
+
