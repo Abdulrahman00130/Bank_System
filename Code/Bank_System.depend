@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1738582471 source:e:\route\bank system project\bank_system\code\main.cpp
+	<iostream>
+	<string>
+	"Person.h"
+
+1738582471 e:\route\bank system project\bank_system\code\include\person.h
+	<iostream>
+	<string>
+
+1738582471 source:e:\route\bank system project\bank_system\code\src\person.cpp
+	"Person.h"
+
