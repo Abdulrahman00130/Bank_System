@@ -2,7 +2,6 @@
 #define PERSON_H
 
 
-#include <iostream>
 #include <string>
 
 using namespace std;
@@ -15,84 +14,40 @@ protected:
 
 public:
 	//Constructors
-	Person()
-	{
-		id = 0;
-		age = 0;
-	}
+	Person();
 
-	Person(string name, string pass, string ques, string ans, int id, int age)
-	{
-		this->name = name;
-		this->pass = pass;
-		this->ques = ques;		// Question and answer for forget password
-		this->ans = ans;		// Question and answer for forget password
-		this->id = id;
-		this->age = age;		// Age to check when openning certain types of accounts	| or to check min working age when adding new employee
-	}
+	Person(string name, string pass, string ques, string ans, int id, int age);
+
+    //Keys
+    bool isAlpha(string name);
 
 	//Setters
-	void setName(string name)
-	{
-		this->name = name;
-	}
-	void setPass(string pass)
-	{
-		this->pass = pass;
-	}
-	void setQues(string ques)
-	{
-		this->ques = ques;
-	}
-	void setAns(string ans)
-	{
-		this->ans = ans;
-	}
-	void setID(int id)
-	{
-		this->id = id;
-	}
-	void setAge(int age)
-	{
-		this->age = age;
-	}
+	void setName(string name);
+
+	void setPass(string pass);
+
+	void setQues(string ques);
+
+	void setAns(string ans);
+
+	void setID(int id);
+
+	void setAge(int age);
 
 	//Getters
-	string getName()
-	{
-		return name;
-	}
-	string getPass()
-	{
-		return pass;
-	}
-	string getQues()
-	{
-		return ques;
-	}
-	string getAns()
-	{
-		return ans;
-	}
-	int getID()
-	{
-		return id;
-	}
-	int getAge()
-	{
-		return age;
-	}
+	string getName();
 
-	void display()
-	{
-		cout << "Name: " << name << endl;
-		cout << "Pass: " << pass << endl;
-		cout << "Question: " << ques << endl;
-		cout << "Answer: " << ans << endl;
-		cout << "ID: " << id << endl;
-		cout << "Age: " << age << endl;
-		cout << "==============================\n";
-	}
+	string getPass();
+
+	string getQues();
+
+	string getAns();
+
+	int getID();
+
+	int getAge();
+
+	void display();
 };
 
 #endif // PERSON_H
