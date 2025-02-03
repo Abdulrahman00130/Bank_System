@@ -18,9 +18,6 @@ public:
 
 	Person(string name, string pass, string ques, string ans, int id, int age);
 
-    //Keys
-    bool isAlpha(string name);
-
 	//Setters
 	void setName(string name);
 

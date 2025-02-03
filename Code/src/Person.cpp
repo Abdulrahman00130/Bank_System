@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Person.h"
+#include "Validation.h"
 
     Person::Person()
 	{
@@ -17,46 +18,16 @@
 		this->age = age;		// Age to check when opening certain types of accounts	| or to check min working age when adding new employee
 	}
 
-	//Keys
-    bool Person::isAlpha(string name)
-    {
-        for (int i = 0; i < name.size(); i++)
-        {
-            if ((name[i] < 'a') || (name[i] > 'z'))
-            {
-                if ((name[i] < 'A') || (name[i] > 'Z'))
-                {
-                    return false;
-                }
-
-            }
-        }
-        return true;
-    }
-
 	//Setters
 	void Person::setName(string name)
 	{
-	    if (!isAlpha(name))
-        {
-            cout << "Name must be alphabetic\n";
-            return;
-        }
-        if (name.size() < 5 || name.size() > 20)
-        {
-            cout << "Name must be between 5 and 20 letters\n";
-            return;
-        }
-		this->name = name;
+	    if (Validation::checkName(name))
+            this->name = name;
 	}
 	void Person::setPass(string pass)
 	{
-	    if (pass.size() < 8 || pass.size() > 20)
-        {
-            cout << "Password must be between 8 and 20 characters\n";
-            return;
-        }
-		this->pass = pass;
+	    if (Validation::checkPass(pass))
+            this->pass = pass;
 	}
 	void Person::setQues(string ques)
 	{
