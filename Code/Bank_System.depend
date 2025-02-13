@@ -1,11 +1,16 @@
 # depslib dependency file v1.0
-1738595272 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+1738777889 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
 	<iostream>
 	<string>
 	"Person.h"
+	"Client.h"
+	"Employee.h"
+	"Admin.h"
 
-1738594076 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
+1739467657 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
+	<iostream>
 	<string>
+	"Validation.h"
 
 1738600658 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\person.cpp
 	<iostream>
@@ -16,8 +21,7 @@
 	<iostream>
 	<string>
 
-1738595175 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\validation.cpp
-	"Validation.h"
+1739278023 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\validation.cpp
 
 1738607820 source:e:\route\bank system project\bank_system\code\main.cpp
 	<iostream>

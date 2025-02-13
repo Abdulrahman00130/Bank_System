@@ -5,12 +5,12 @@
 class Admin:public Employee
 {
     public:
-        Admin();
-        Admin(string name, string pass, string ques, string ans, int id, int age, double salary);
+    //cons
+    Admin(){}
+    Admin(string name, string pass, string ques, string ans, int id, int age, double salary):Employee(name, pass, ques, ans, id, age,salary)
+    {
 
-    protected:
-
-    private:
+    }
 };
 
 #endif // ADMIN_H
