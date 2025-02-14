@@ -1,74 +1,34 @@
-#include "Parser.h"
-
-using namespace std;
+#include "FilesHelper.h"
 
 int main()
 {
-    //Person
-    Person p1("Ahmed", "264dgdsf6", "Birth Place?", "Cairo", 1, 32), p2;
+    FilesHelper::getAdmins();
 
-	p1.display();
-	p2.display();
+    cout << "Admins:\n";
+    for (int i = 0; i < adminVect.size(); i++)
+    {
+        adminVect[i].display();
+    }
 
-	p2.setName("abdo");
-	p2.display();
+    cout << "adminLastID: " << adminLastID << endl;
 
-	p2.setName("abdo6");
-	p2.display();
+    FilesHelper::getClients();
 
-	p2.setName("ahmed");
-	p2.display();
+    cout << "Clients:\n";
+    for (int i = 0; i < clientVect.size(); i++)
+    {
+        clientVect[i].display();
+    }
 
-	p2.setPass("6sd4g");
-	p2.display();
+    cout << "clientLastID: " << clientLastID << endl;
 
-    p2.setPass("2s64dg56sdg15d4f4gf6d4645fd4g6dfgs5d4gdf2b6df4bd");
-	p2.display();
+    FilesHelper::getEmployees();
 
-	p2.setPass("2s64dg56sdg1");
-	p2.display();
+    cout << "Employee:\n";
+    for (int i = 0; i < employeeVect.size(); i++)
+    {
+        employeeVect[i].display();
+    }
 
-	//Client
-	Client c1("Sehs", "9000pm2", "which school you learned in?", "Mogamaa", 555, 17, 10000.5);
-	c1.display();
-
-	c1.withdraw(5000);
-	c1.checkBalance();
-	c1.setBalance(600000);
-	c1.display();
-
-	cout << c1.getBalance() << endl;
-
-	c1.deposit(25000);
-	c1.withdraw(700000);
-
-	Client c2("mohamed", "122223ppoo", "geblro", "fkeng", 1598, 19, 1500);
-	c2.display();
-
-	//Employee
-	Employee E1("abdo", "264dgdsf6", "Birth Place?", "Mtobas", 111, 32,5500);
-
-	E1.display();
-	E1.setSalary(45000);
-	cout<<E1.getSalary();
-
-
-	//Admin
-	Admin D1("abdoooo", "264dgdsf6", "Birth Place?", "qwesna", 111, 32,5500);
-
-	D1.display();
-	D1.setSalary(45000);
-	cout<<D1.getSalary() << "\n===================================\n";
-
-    string s = "Ahmed#1001#pass1001#20#What is your pet's name?#Fluffy#1500";
-    Client c3 = Parser::parseToClient(s);
-    c3.display();
-
-    s = "Ehsan#2001#pass2001#45#What is your pet's name?#Rex#6230";
-    Employee e2 = Parser::parseToEmployee(s);
-    e2.display();
-
-    s = "Fouad#3001#pass3001#53#What is your pet's name?#Morgan#15690";
-    Admin a2 = Parser::parseToAdmin(s);
-    a2.display();
+    cout << "employeeLastID: " << employeeLastID << endl;
 }
