@@ -2,7 +2,7 @@
 #define FILESHELPER_H
 
 #include "Globals.h"
-#include <Parser.h>
+#include "Parser.h"
 #include <fstream>
 
 class FilesHelper
@@ -33,9 +33,7 @@ public:
 		write << endl << client;
 		write.close();
 
-		write.open("ClientLastID.txt");
-		write << to_string(c.getID());
-		write.close();
+		saveLast("ClientLastID.txt", c.getID());
 	}
 
 	static void saveEmployee(string fileName, string lastIdFile, Employee e)
@@ -46,9 +44,7 @@ public:
 		write << endl << employee;
 		write.close();
 
-		write.open(lastIdFile);
-		write << to_string(e.getID());
-		write.close();
+		saveLast(lastIdFile, e.getID());
 	}
 
 	static void getClients()
@@ -65,7 +61,7 @@ public:
 		}
 		read.close();
 
-		clientLastID = FilesHelper::getLast("ClientLastID.txt");
+		clientLastID = getLast("ClientLastID.txt");
 	}
 
 	static void getEmployees()
@@ -82,7 +78,7 @@ public:
 		}
 		read.close();
 
-		employeeLastID = FilesHelper::getLast("EmployeeLastID.txt");
+		employeeLastID = getLast("EmployeeLastID.txt");
 	}
 
 	static void getAdmins()
@@ -99,7 +95,7 @@ public:
 		}
 		read.close();
 
-		adminLastID = FilesHelper::getLast("AdminLastID.txt");
+		adminLastID = getLast("AdminLastID.txt");
 	}
 
 	static void clearFile(string fileName, string lastIdFile)

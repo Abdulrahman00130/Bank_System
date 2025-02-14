@@ -31,4 +31,6 @@ int main()
     }
 
     cout << "employeeLastID: " << employeeLastID << endl;
+
+    FilesHelper::clearFile("Client2.txt", "ClientLastID2.txt");
 }

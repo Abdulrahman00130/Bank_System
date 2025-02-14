@@ -43,12 +43,7 @@
 		<Unit filename="include/Person.h" />
 		<Unit filename="include/Validation.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Admin.cpp" />
-		<Unit filename="src/Client.cpp" />
-		<Unit filename="src/Employee.cpp" />
 		<Unit filename="src/Globals.cpp" />
-		<Unit filename="src/Person.cpp" />
-		<Unit filename="src/Validation.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1739552086 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+1739552257 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
 	"FilesHelper.h"
 
 1739548733 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
@@ -105,16 +105,16 @@
 	"Admin.h"
 	"Client.h"
 
-1739551838 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\fileshelper.h
+1739563143 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\fileshelper.h
 	"Globals.h"
-	<Parser.h>
+	"Parser.h"
 	<fstream>
 
-1739547287 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\globals.h
+1739562676 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\globals.h
 	<vector>
 	"Client.h"
 	"Admin.h"
 
-1739551981 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
+1739563145 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
 	"Globals.h"
 
