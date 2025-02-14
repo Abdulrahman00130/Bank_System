@@ -1,7 +1,4 @@
-#include <iostream>
-#include <string>
-#include "Client.h"
-#include"Admin.h"
+#include "Parser.h"
 
 using namespace std;
 
@@ -61,7 +58,17 @@ int main()
 
 	D1.display();
 	D1.setSalary(45000);
-	cout<<D1.getSalary();
+	cout<<D1.getSalary() << "\n===================================\n";
 
+    string s = "Ahmed#1001#pass1001#20#What is your pet's name?#Fluffy#1500";
+    Client c3 = Parser::parseToClient(s);
+    c3.display();
 
+    s = "Ehsan#2001#pass2001#45#What is your pet's name?#Rex#6230";
+    Employee e2 = Parser::parseToEmployee(s);
+    e2.display();
+
+    s = "Fouad#3001#pass3001#53#What is your pet's name?#Morgan#15690";
+    Admin a2 = Parser::parseToAdmin(s);
+    a2.display();
 }

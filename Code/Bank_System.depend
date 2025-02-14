@@ -1,21 +1,13 @@
 # depslib dependency file v1.0
-1738777889 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
-	<iostream>
-	<string>
-	"Person.h"
-	"Client.h"
-	"Employee.h"
-	"Admin.h"
+1739497185 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+	"Parser.h"
 
-1739467657 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
+1739496879 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
 	<iostream>
 	<string>
 	"Validation.h"
 
-1738600658 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\person.cpp
-	<iostream>
-	"Person.h"
-	"Validation.h"
+1739467732 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\person.cpp
 
 1738600610 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\validation.h
 	<iostream>
@@ -95,24 +87,25 @@
 1738614371 d:\route\bank_system\code\include\admin.h
 	"Employee.h"
 
-1738623051 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\admin.cpp
-	"Admin.h"
+1739468051 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\admin.cpp
 
-1738623051 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
+1739468046 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
 	"Employee.h"
 
-1738623051 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
+1739496733 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
 	"Person.h"
 
-1738623051 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\client.cpp
+1739497433 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\client.cpp
+
+1739497386 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
+	"Person.h"
+
+1739467926 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\employee.cpp
+
+1739496717 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\parser.h
 	<iostream>
+	<string>
+	<vector>
+	"Admin.h"
 	"Client.h"
-	"Validation.h"
-
-1738623051 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
-	"Person.h"
-
-1738623051 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\employee.cpp
-	"Employee.h"
-	"Validation.h"
 
