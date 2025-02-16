@@ -1,10 +1,10 @@
-Ahmed#3001#pass3001#20#What is your pet's name?#Fluffy#5000
-Hussein#3002#pass3002#21#What is your favorite color?#Blue#5100
-Ibrahim#3003#pass3003#22#What is your mother's maiden name?#Brown#5200
-Khalid#3004#pass3004#23#What is your first car?#Civic#5300
-Mansour#3005#pass3005#24#What is your hometown?#Springfield#5400
-Nasser#3006#pass3006#25#What is your best friend's name?#Alex#5500
-Jamal#3007#pass3007#26#What is your pet's name?#Fluffy#5600
-Kareem#3008#pass3008#27#What is your favorite color?#Blue#5700
-Talal#3009#pass3009#28#What is your mother's maiden name?#Brown#5800
-Majid#3010#pass3010#29#What is your first car?#Civic#5900
+Ahmed#3001#pass3001#20#What is your pet's name?#Fluffy#5000.000000
+Hussein#3002#pass3002#21#What is your favorite color?#Blue#5100.000000
+Ibrahim#3003#pass3003#22#What is your mother's maiden name?#Brown#5200.000000
+Khalid#3004#pass3004#23#What is your first car?#Civic#5300.000000
+Mansour#3005#pass3005#24#What is your hometown?#Springfield#5400.000000
+Nasser#3006#pass3006#25#What is your best friend's name?#Alex#5500.000000
+Jamal#3007#pass3007#26#What is your pet's name?#Fluffy#5600.000000
+Kareem#3008#pass3008#27#What is your favorite color?#Blue#5700.000000
+Talal#3009#pass3009#28#What is your mother's maiden name?#Brown#5800.000000
+Majid#3010#pass3010#29#What is your first car?#Civic#5900.000000

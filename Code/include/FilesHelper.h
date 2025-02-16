@@ -9,6 +9,15 @@ class FilesHelper
 {
 public:
 
+    static bool isEmpty(string fileName)
+    {
+        bool empty = false;
+        ifstream read(fileName);
+        empty = read.peek() == ifstream::traits_type::eof();
+        read.close();
+        return empty;
+    }
+
 	static void saveLast(string fileName, int id)
 	{
 		ofstream write(fileName);
@@ -30,7 +39,10 @@ public:
 		string client;
 		client = c.getName() + '#' + to_string(c.getID()) + '#' + c.getPass() + '#' + to_string(c.getAge()) + '#' + c.getQues() + '#' + c.getAns() + '#' + to_string(c.getBalance());
 		ofstream write("Client.txt", ios::app);
-		write << endl << client;
+		if (isEmpty("Client.txt"))
+            write << client;
+        else
+            write << endl << client;
 		write.close();
 
 		saveLast("ClientLastID.txt", c.getID());
@@ -41,7 +53,10 @@ public:
 		string employee;
 		employee = e.getName() + '#' + to_string(e.getID()) + '#' + e.getPass() + '#' + to_string(e.getAge()) + '#' + e.getQues() + '#' + e.getAns() + '#' + to_string(e.getSalary());
 		ofstream write(fileName, ios::app);
-		write << endl << employee;
+		if (isEmpty(fileName))
+			write << employee;
+		else
+			write << endl << employee;
 		write.close();
 
 		saveLast(lastIdFile, e.getID());

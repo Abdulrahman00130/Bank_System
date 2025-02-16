@@ -1,8 +1,8 @@
-#include "FilesHelper.h"
+#include "FileManager.h"
 
 int main()
 {
-    FilesHelper::getAdmins();
+    FileManager::getAllAdmins();
 
     cout << "Admins:\n";
     for (int i = 0; i < adminVect.size(); i++)
@@ -12,7 +12,7 @@ int main()
 
     cout << "adminLastID: " << adminLastID << endl;
 
-    FilesHelper::getClients();
+    FileManager::getAllClients();
 
     cout << "Clients:\n";
     for (int i = 0; i < clientVect.size(); i++)
@@ -22,7 +22,7 @@ int main()
 
     cout << "clientLastID: " << clientLastID << endl;
 
-    FilesHelper::getEmployees();
+    FileManager::getAllEmployees();
 
     cout << "Employee:\n";
     for (int i = 0; i < employeeVect.size(); i++)
@@ -32,5 +32,16 @@ int main()
 
     cout << "employeeLastID: " << employeeLastID << endl;
 
-    FilesHelper::clearFile("Client2.txt", "ClientLastID2.txt");
+    FileManager::saveEverything();
+
+//    Client c1("Mohamed", "9000pm25df4g", "which school you learned in?", "Mogamaa", ++clientLastID, 17, 10000.5);
+//    clientVect.push_back(c1);
+//
+//    Employee e1("abdelrahman", "264dgdsf6", "Birth Place?", "Mtobas", ++employeeLastID, 32, 5500);
+//    employeeVect.push_back(e1);
+//
+//    Admin a1("abdoooo", "264dgdsf6", "Birth Place?", "qwesna", ++adminLastID, 32, 5500);
+//    adminVect.push_back(a1);
+//
+//    FileManager::saveEverything();
 }
