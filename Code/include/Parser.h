@@ -1,13 +1,9 @@
 #ifndef PARSER_H
 #define PARSER_H
 
-#include <iostream>
-#include <string>
 #include <vector>
 #include "Admin.h"
 #include "Client.h"
-
-using namespace std;
 
 class Parser
 {
