@@ -11,7 +11,6 @@ public:
 	static vector<string> split(string line)
 	{
 		vector<string> data;
-		int wordStart{};
 		int wordLength{};
 
 		while (line.size() > 0)

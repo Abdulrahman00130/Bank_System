@@ -10,7 +10,7 @@ int main()
         adminVect[i].display();
     }
 
-    cout << "adminLastID: " << adminLastID << endl;
+    cout << "admin last ID: " << adminLastID << endl;
 
     FileManager::getAllClients();
 
@@ -20,7 +20,7 @@ int main()
         clientVect[i].display();
     }
 
-    cout << "clientLastID: " << clientLastID << endl;
+    cout << "client last ID: " << clientLastID << endl;
 
     FileManager::getAllEmployees();
 
@@ -30,7 +30,7 @@ int main()
         employeeVect[i].display();
     }
 
-    cout << "employeeLastID: " << employeeLastID << endl;
+    cout << "employee last ID: " << employeeLastID << endl;
 
     FileManager::saveEverything();
 

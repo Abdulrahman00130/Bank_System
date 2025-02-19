@@ -1,6 +1,6 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
-
+#include "Globals.h"
 #include "Person.h"
 
 class Employee : public Person
@@ -29,6 +29,17 @@ protected:
        double getSalary()
         {
             return salary;
+        }
+
+        void addClient(Client& client)
+        {
+            clientVect.push_back(client);
+            clientLastID= client.getID();
+        }
+        Client* searchId(int id)
+        {
+          // binary search (id sorted)
+          //add remove one client function to employee
         }
 
         void display ()

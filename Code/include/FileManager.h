@@ -4,7 +4,7 @@
 #include "DataSourceInterface.h"
 #include "FilesHelper.h"
 
-class FileManager
+class FileManager :public DataSourceInterface
 {
     public:
 		static void addClient(Client c)
