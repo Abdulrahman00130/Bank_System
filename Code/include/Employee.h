@@ -93,17 +93,48 @@ protected:
          clientVect[index].setBalance(clbal);
      }
 
-//     void editClient(int index, int choice)
-//     {
-//        switch(choice)
-//        {
-//      case 1:
-//          cout<<"enter name\n";
-//        editClientName()
-//        }
-//
-//
-//     }
+     void editClient(int index, int choice)
+     {
+        switch(choice)
+        {
+      case 1:
+          cout<<"current name: "<<clientVect[index].getName()<<endl;
+          cout<<"enter new name\n";
+          string clName;
+         getline(cin>>ws,clName);
+        editClientName(clName,index);
+        cout<<"Name edited successfully\n";
+        break;
+
+         case 2:
+          cout<<"current age: "<<clientVect[index].getAge()<<endl;
+          cout<<"enter new age\n";
+          int clAge;
+          cin<<clAge;
+        editClientAge(clAge,index);
+        cout<<"Age edited successfully\n";
+        break;
+
+         case 3:
+          cout<<"current password: "<<clientVect[index].getPass()<<endl;
+          cout<<"enter new pass\n";
+          string clPass;
+          cin<<clPass;
+        editClientPassword(clPass,index);
+        cout<<"Password edited successfully\n";
+        break;
+
+         case 4:
+          cout<<"current balance: "<<clientVect[index].getBalance()<<endl;
+          cout<<"enter new balance\n";
+          double clBalance;
+          cin<<clBalance;
+        editClientBalance(clBalance,index);
+        cout<<"Balance edited successfully\n";
+        break;
+
+        }
+     }
 
 
         void display ()

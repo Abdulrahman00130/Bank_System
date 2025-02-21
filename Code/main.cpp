@@ -34,13 +34,18 @@ int main()
 
     FileManager::saveEverything();
 
-//    Client c1("Mohamed", "9000pm25df4g", "which school you learned in?", "Mogamaa", ++clientLastID, 17, 10000.5);
+    Client c1("Mohamed", "9000pm25df4g", "which school you learned in?", "Mogamaa", ++clientLastID, 17, 10000.5);
 //    clientVect.push_back(c1);
 //
-//    Employee e1("abdelrahman", "264dgdsf6", "Birth Place?", "Mtobas", ++employeeLastID, 32, 5500);
+    Employee e1("abdelrahman", "264dgdsf6", "Birth Place?", "Mtobas", ++employeeLastID, 32, 5500);
+    e1.addClient(c1);
+
 //    employeeVect.push_back(e1);
 //
-//    Admin a1("abdoooo", "264dgdsf6", "Birth Place?", "qwesna", ++adminLastID, 32, 5500);
+    Admin a1("abdoooo", "264dgdsf6", "Birth Place?", "qwesna", ++adminLastID, 32, 5500);
+    a1.addEmployee(e1);
+    a1.listClient();
+    a1.listEmployee();
 //    adminVect.push_back(a1);
 //
 //    FileManager::saveEverything();

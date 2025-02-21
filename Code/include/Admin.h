@@ -12,6 +12,111 @@ class Admin:public Employee
     {
 
     }
+     void addEmployee(Employee& employee)
+        {
+            employeeVect.push_back(employee);
+            employeeLastID= employee.getID();
+        }
+        int searchEmployee(int emID)
+        {
+          // binary search (id sorted)
+
+          int start{};
+          int ends= employeeVect.size()-1;
+          int mid ;
+          while(true)
+          {
+              mid=(ends-start)/2;
+              if(employeeVect[mid].getID()==emID)
+              return mid;
+
+              if(employeeVect[mid].getID()>emID)
+              {
+                  ends=mid-1;
+              }
+              else
+              {
+                  start=mid+1;
+              }
+              if(ends<start) return -1;
+
+          }
+          //add remove one employee function to employee
+        }
+
+        void listEmployee()
+        {
+            cout << "All Employees:\n";
+    for (int i = 0; i < employeeVect.size(); i++)
+    {
+        employeeVect[i].display();
+    }
+
+        }
+
+     void editEmployeeName(string emName ,int index)
+     {
+         employeeVect[index].setName(emName);
+     }
+
+      void editEmployeeAge(int emAge ,int index)
+     {
+         employeeVect[index].setAge(emAge);
+     }
+
+      void editEmployeePassword(string emPass ,int index)
+     {
+         employeeVect[index].setPass(emPass);
+     }
+
+      void editEmployeeSalary(double embal ,int index)
+     {
+         employeeVect[index].setSalary(embal);
+     }
+
+     void editEmployee(int index, int choice)
+     {
+        switch(choice)
+        {
+      case 1:
+          cout<<"current name: "<<employeeVect[index].getName()<<endl;
+          cout<<"enter new name\n";
+          string emName;
+         getline(cin>>ws,emName);
+        editEmployeeName(emName,index);
+        cout<<"Name edited successfully\n";
+        break;
+
+         case 2:
+          cout<<"current age: "<<employeeVect[index].getAge()<<endl;
+          cout<<"enter new age\n";
+          int emAge;
+          cin<<emAge;
+        editEmployeeAge(emAge,index);
+        cout<<"Age edited successfully\n";
+        break;
+
+         case 3:
+          cout<<"current password: "<<employeeVect[index].getPass()<<endl;
+          cout<<"enter new pass\n";
+          string emPass;
+          cin<<emPass;
+        editEmployeePassword(emPass,index);
+        cout<<"Password edited successfully\n";
+        break;
+
+         case 4:
+          cout<<"current Salary: "<<employeeVect[index].getSalary()<<endl;
+          cout<<"enter new Salary\n";
+          double emSalary;
+          cin<<emSalary;
+        editEmployeeSalary(emSalary,index);
+        cout<<"Salary edited successfully\n";
+        break;
+
+        }
+     }
+
 };
 
 #endif // ADMIN_H
