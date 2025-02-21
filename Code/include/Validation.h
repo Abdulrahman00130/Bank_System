@@ -14,7 +14,7 @@ class Validation
 
         static bool isAlpha(string name)
         {
-            for (int i = 0; i < name.size(); i++)
+            for (unsigned long long i = 0; i < name.size(); i++)
             {
                 if ((name[i] < 'a') || (name[i] > 'z'))
                 {

@@ -1,6 +1,7 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
+#include <vector>
 #include "Person.h"
 
 class Client : public Person{
@@ -52,5 +53,8 @@ public:
         cout << "===============================\n";
     }
 };
+
+static vector<Client> clientVect;
+static int clientLastID;
 
 #endif // CLIENT_H
