@@ -2,7 +2,8 @@
 
 int main()
 {
-    FileManager::getAllAdmins();
+    FileManager myFile;
+    myFile.getAllAdmins();
 
     cout << "Admins:\n";
     for (int i = 0; i < adminVect.size(); i++)
@@ -12,7 +13,7 @@ int main()
 
     cout << "admin last ID: " << adminLastID << endl;
 
-    FileManager::getAllClients();
+    myFile.getAllClients();
 
     cout << "Clients:\n";
     for (int i = 0; i < clientVect.size(); i++)
@@ -22,7 +23,7 @@ int main()
 
     cout << "client last ID: " << clientLastID << endl;
 
-    FileManager::getAllEmployees();
+    myFile.getAllEmployees();
 
     cout << "Employee:\n";
     for (int i = 0; i < employeeVect.size(); i++)
@@ -32,7 +33,7 @@ int main()
 
     cout << "employee last ID: " << employeeLastID << endl;
 
-    FileManager::saveEverything();
+    myFile.saveEverything();
 
     Client c1("Mohamed", "9000pm25df4g", "which school you learned in?", "Mogamaa", ++clientLastID, 17, 10000.5);
 //    clientVect.push_back(c1);

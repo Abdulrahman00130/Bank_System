@@ -3,7 +3,8 @@
 
 #include"Employee.h"
 
-class Admin:public Employee
+
+class Admin : public Employee
 {
     public:
     //cons
@@ -47,7 +48,7 @@ class Admin:public Employee
         void listEmployee()
         {
             cout << "All Employees:\n";
-    for (int i = 0; i < employeeVect.size(); i++)
+    for (unsigned long long i = 0; i < employeeVect.size(); i++)
     {
         employeeVect[i].display();
     }
@@ -76,47 +77,48 @@ class Admin:public Employee
 
      void editEmployee(int index, int choice)
      {
+         string emName;
+         int emAge{};
+         string emPass;
+         double emSalary{};
         switch(choice)
         {
-      case 1:
-          cout<<"current name: "<<employeeVect[index].getName()<<endl;
-          cout<<"enter new name\n";
-          string emName;
-         getline(cin>>ws,emName);
-        editEmployeeName(emName,index);
-        cout<<"Name edited successfully\n";
-        break;
+         case 1:
+            cout<<"current name: "<<employeeVect[index].getName()<<endl;
+            cout<<"enter new name\n";
+            getline(cin>>ws,emName);
+            editEmployeeName(emName,index);
+            cout<<"Name edited successfully\n";
+            break;
 
          case 2:
-          cout<<"current age: "<<employeeVect[index].getAge()<<endl;
-          cout<<"enter new age\n";
-          int emAge;
-          cin<<emAge;
-        editEmployeeAge(emAge,index);
-        cout<<"Age edited successfully\n";
-        break;
+            cout<<"current age: "<<employeeVect[index].getAge()<<endl;
+            cout<<"enter new age\n";
+            cin>>emAge;
+            editEmployeeAge(emAge,index);
+            cout<<"Age edited successfully\n";
+            break;
 
          case 3:
-          cout<<"current password: "<<employeeVect[index].getPass()<<endl;
-          cout<<"enter new pass\n";
-          string emPass;
-          cin<<emPass;
-        editEmployeePassword(emPass,index);
-        cout<<"Password edited successfully\n";
-        break;
+            cout<<"current password: "<<employeeVect[index].getPass()<<endl;
+            cout<<"enter new pass\n";
+            cin>>emPass;
+            editEmployeePassword(emPass,index);
+            cout<<"Password edited successfully\n";
+            break;
 
          case 4:
-          cout<<"current Salary: "<<employeeVect[index].getSalary()<<endl;
-          cout<<"enter new Salary\n";
-          double emSalary;
-          cin<<emSalary;
-        editEmployeeSalary(emSalary,index);
-        cout<<"Salary edited successfully\n";
-        break;
+            cout<<"current Salary: "<<employeeVect[index].getSalary()<<endl;
+            cout<<"enter new Salary\n";
+            cin>>emSalary;
+            editEmployeeSalary(emSalary,index);
+            cout<<"Salary edited successfully\n";
+            break;
 
         }
      }
 
 };
-
+static vector<Admin> adminVect;
+static int adminLastID;
 #endif // ADMIN_H

@@ -1,7 +1,6 @@
 #ifndef FILESHELPER_H
 #define FILESHELPER_H
 
-#include "Globals.h"
 #include "Parser.h"
 #include <fstream>
 

@@ -1,7 +1,8 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
-#include "Globals.h"
-#include "Person.h"
+
+#include <vector>
+#include "Client.h"
 
 class Employee : public Person
 {
@@ -66,7 +67,7 @@ protected:
         void listClient()
         {
             cout << "All Clients:\n";
-    for (int i = 0; i < clientVect.size(); i++)
+    for (unsigned long long i = 0; i < clientVect.size(); i++)
     {
         clientVect[i].display();
     }
@@ -95,44 +96,43 @@ protected:
 
      void editClient(int index, int choice)
      {
+        string clName;
+        int clAge{};
+        string clPass;
+        double clBalance{};
         switch(choice)
         {
-      case 1:
+        case 1:
           cout<<"current name: "<<clientVect[index].getName()<<endl;
           cout<<"enter new name\n";
-          string clName;
-         getline(cin>>ws,clName);
-        editClientName(clName,index);
-        cout<<"Name edited successfully\n";
-        break;
+          getline(cin>>ws,clName);
+          editClientName(clName,index);
+          cout<<"Name edited successfully\n";
+          break;
 
-         case 2:
-          cout<<"current age: "<<clientVect[index].getAge()<<endl;
-          cout<<"enter new age\n";
-          int clAge;
-          cin<<clAge;
-        editClientAge(clAge,index);
-        cout<<"Age edited successfully\n";
-        break;
+        case 2:
+            cout<<"current age: "<<clientVect[index].getAge()<<endl;
+            cout<<"enter new age\n";
+            cin>>clAge;
+            editClientAge(clAge,index);
+            cout<<"Age edited successfully\n";
+            break;
 
          case 3:
-          cout<<"current password: "<<clientVect[index].getPass()<<endl;
-          cout<<"enter new pass\n";
-          string clPass;
-          cin<<clPass;
-        editClientPassword(clPass,index);
-        cout<<"Password edited successfully\n";
-        break;
+            cout<<"current password: "<<clientVect[index].getPass()<<endl;
+            cout<<"enter new pass\n";
+            cin>>clPass;
+            editClientPassword(clPass,index);
+            cout<<"Password edited successfully\n";
+            break;
 
          case 4:
-          cout<<"current balance: "<<clientVect[index].getBalance()<<endl;
-          cout<<"enter new balance\n";
-          double clBalance;
-          cin<<clBalance;
-        editClientBalance(clBalance,index);
-        cout<<"Balance edited successfully\n";
-        break;
-
+            cout<<"current balance: "<<clientVect[index].getBalance()<<endl;
+            cout<<"enter new balance\n";
+            cin>>clBalance;
+            editClientBalance(clBalance,index);
+            cout<<"Balance edited successfully\n";
+            break;
         }
      }
 
@@ -147,5 +147,8 @@ protected:
         }
 
 };
+
+static vector<Employee> employeeVect;
+static int employeeLastID;
 
 #endif // EMPLOYEE_H
