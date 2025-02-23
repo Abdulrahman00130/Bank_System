@@ -26,6 +26,7 @@ public:
     }
     void deposit(double amount){
         balance += amount;
+        cout << "Successful operation\n";
     }
     void withdraw(double amount){
         if(amount > balance){
@@ -33,6 +34,7 @@ public:
             return;
             }
         balance -= amount;
+        cout << "Successful operation\n";
     }
     void transferTo(double amount, Client& recipient){
         if(amount > balance){
@@ -41,6 +43,7 @@ public:
         }
         balance -= amount;
         recipient.balance += amount;
+        cout << "Successful operation\n";
     }
     void checkBalance(){
         cout << "Balance: " << balance << endl;

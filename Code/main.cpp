@@ -1,4 +1,5 @@
 #include "FileManager.h"
+#include "ClientManger.h"
 
 int main()
 {
@@ -45,8 +46,15 @@ int main()
 //
     Admin a1("abdoooo", "264dgdsf6", "Birth Place?", "qwesna", ++adminLastID, 32, 5500);
     a1.addEmployee(e1);
-    a1.listClient();
-    a1.listEmployee();
+
+    ClientManger::printClientMenu();
+    ClientManger::clientOptions(80);
+
+    clientVect[80].display();
+    clientVect[79].display();
+
+//    a1.listClient();
+//    a1.listEmployee();
 //    adminVect.push_back(a1);
 //
 //    FileManager::saveEverything();

@@ -1,6 +1,7 @@
 # depslib dependency file v1.0
-1740163899 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+1740317282 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
 	"FileManager.h"
+	"ClientManger.h"
 
 1740168178 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\filemanager.h
 	"DataSourceInterface.h"
@@ -24,7 +25,7 @@
 	<iostream>
 	<string>
 
-1740166310 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
+1740269304 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
 	<vector>
 	"Person.h"
 
@@ -42,4 +43,8 @@
 
 1739563145 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
 	"Globals.h"
+
+1740317739 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
+	"Client.h"
+	<cstdlib>
 
