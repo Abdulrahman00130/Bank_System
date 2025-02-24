@@ -21,26 +21,29 @@ class Admin : public Employee
         int searchEmployee(int emID)
         {
           // binary search (id sorted)
+          // 0  1  2  3  4  5
+          // 1  2  3  4  5  6
 
           int start{};
-          int ends= employeeVect.size()-1;
-          int mid ;
+          int ends = employeeVect.size() - 1;
+          int mid{};
           while(true)
           {
-              mid=(ends-start)/2;
-              if(employeeVect[mid].getID()==emID)
-              return mid;
+              mid = start + (ends - start) / 2;
+              if (employeeVect[mid].getID() == emID)
+                  return mid;
 
-              if(employeeVect[mid].getID()>emID)
+              if (employeeVect[mid].getID() > emID)
               {
-                  ends=mid-1;
+                  ends = mid - 1;
               }
               else
               {
-                  start=mid+1;
+                  start = mid + 1;
               }
-              if(ends<start) return -1;
-
+              if (ends < start) 
+                  return -1;
+              
           }
           //add remove one employee function to employee
         }
@@ -75,12 +78,18 @@ class Admin : public Employee
          employeeVect[index].setSalary(embal);
      }
 
-     void editEmployee(int index, int choice)
+     void editEmployee(int index)
      {
          string emName;
          int emAge{};
          string emPass;
          double emSalary{};
+
+         int choice{};
+         printEditOptions();
+         cin >> choice;
+         CLRSCRN;
+
         switch(choice)
         {
          case 1:

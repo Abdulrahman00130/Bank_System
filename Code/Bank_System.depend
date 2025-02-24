@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1740317282 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
-	"FileManager.h"
-	"ClientManger.h"
+1740433555 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+	"Screens.h"
 
-1740168178 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\filemanager.h
+1740411785 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\filemanager.h
 	"DataSourceInterface.h"
 	"FilesHelper.h"
 
@@ -11,12 +10,13 @@
 	"Admin.h"
 	"Client.h"
 
-1740168050 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
+1740415779 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
 	"Employee.h"
 
-1740168050 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
+1740409358 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
 	<vector>
 	"Client.h"
+	<cstdlib>
 
 1739548733 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\person.h
 	"Validation.h"
@@ -44,7 +44,20 @@
 1739563145 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
 	"Globals.h"
 
-1740317739 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
+1740409369 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
 	"Client.h"
 	<cstdlib>
+
+1740433908 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\screens.h
+	<windows.h>
+	"AdminManager.h"
+	"FileManager.h"
+
+1740416401 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\adminmanager.h
+	"Admin.h"
+	"EmployeeManager.h"
+
+1740415351 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employeemanager.h
+	"Employee.h"
+	"ClientManger.h"
 

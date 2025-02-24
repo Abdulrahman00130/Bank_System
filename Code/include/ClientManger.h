@@ -39,16 +39,15 @@ private:
 public:
 	static void printClientMenu()
 	{
-		cout << "=================================\n";
-		cout << "Enter 1 to display account info\n";
-		cout << "Enter 2 to check balance\n";
-		cout << "Enter 3 to update password\n";
-		cout << "Enter 4 to withdraw\n";
-		cout << "Enter 5 to deposit\n";
-		cout << "Enter 6 to transfer\n";
-		cout << "Enter 7 to logout\n";
 		cout << "=================================\n\n";
-		cout << "Your choice: ";
+		cout << "Enter (1) to display account info\n\n";
+		cout << "Enter (2) to check balance\n\n";
+		cout << "Enter (3) to update password\n\n";
+		cout << "Enter (4) to withdraw\n\n";
+		cout << "Enter (5) to deposit\n\n";
+		cout << "Enter (6) to transfer\n\n";
+		cout << "Enter (7) to logout\n\n";
+		cout << "=================================\n\n";
 	}
 
 	static void updatePassword(Person& person)
@@ -83,22 +82,23 @@ public:
 	{
 		int index;
 		index = searchClient(id);
-		system("pause");
 		if (index < 0)
 			return -1;
 		if (password != clientVect[index].getPass())
 			return -1;
 		return index;
-
 	}
 
 	static bool clientOptions(int index)
 	{
 		int choice{}, id{}, recipIndex{};
 		double amount{};
+
+		cout << "Your choice: ";
 		cin >> choice;
 		cin.ignore();
 		CLRSCRN;
+
 		switch (choice)
 		{
 		case 1:
