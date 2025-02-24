@@ -37,6 +37,13 @@ class FileManager : public DataSourceInterface
 		    FilesHelper::getAdmins();
 		}
 
+		void getEverything()
+		{
+		    getAllClients();
+		    getAllEmployees();
+		    getAllAdmins();
+		}
+
 		void removeAllClients()
 		{
 		    FilesHelper::clearFile("Client.txt", "ClientLastID.txt");
