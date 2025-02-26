@@ -10,10 +10,10 @@
 	"Admin.h"
 	"Client.h"
 
-1740528834 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
+1740581924 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
 	"Employee.h"
 
-1740528839 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
+1740576639 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
 	<vector>
 	"Client.h"
 	<cstdlib>
@@ -25,7 +25,7 @@
 	<iostream>
 	<string>
 
-1740528818 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
+1740576531 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
 	<vector>
 	"Person.h"
 
@@ -44,20 +44,20 @@
 1739563145 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
 	"Globals.h"
 
-1740436255 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
+1740575775 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
 	"Client.h"
 	<cstdlib>
 
-1740532601 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\screens.h
+1740572429 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\screens.h
 	<windows.h>
 	"AdminManager.h"
 	"FileManager.h"
 
-1740529842 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\adminmanager.h
+1740582176 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\adminmanager.h
 	"Admin.h"
 	"EmployeeManager.h"
 
-1740436281 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employeemanager.h
+1740582152 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employeemanager.h
 	"Employee.h"
 	"ClientManger.h"
 

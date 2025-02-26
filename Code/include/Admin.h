@@ -6,6 +6,17 @@
 
 class Admin : public Employee
 {
+private:
+    void printEmployeeEdit()
+    {
+        cout << "=================================\n";
+        cout << "Enter (1) to edit name\n";
+        cout << "Enter (2) to edit age\n";
+        cout << "Enter (3) to edit password\n";
+        cout << "Enter (4) to edit salary\n";
+        cout << "=================================\n\n";
+    }
+
     public:
     //cons
     Admin(){}
@@ -21,8 +32,8 @@ class Admin : public Employee
         int searchEmployee(int emID)
         {
           // binary search (id sorted)
-          // 0  1  2  3  4  5
-          // 1  2  3  4  5  6
+          if (emptyVect<Employee>(employeeVect))
+            return -1;
 
           int start{};
           int ends = employeeVect.size() - 1;
@@ -86,7 +97,7 @@ class Admin : public Employee
          double emSalary{};
 
          int choice{};
-         printEditOptions();
+         printEmployeeEdit();
          cin >> choice;
          CLRSCRN;
 

@@ -11,6 +11,8 @@ private:
     static int searchAdmin(int adID)
 	{
 		// binary search (id sorted)
+        if (emptyVect<Admin>(adminVect))
+            return -1;
 
 		int start{};
 		int ends = adminVect.size() - 1;
@@ -97,11 +99,11 @@ public:
 			getline(cin >> ws, ans);
 			CLRSCRN;
 
-			cout << "Enter the amount:\n";
+			cout << "Enter the salary:\n";
 			cin >> salary;
 			while (!Validation::checkSal(salary))
 			{
-				cout << "Enter the amount:\n";
+				cout << "Enter the salary:\n";
 				cin >> salary;
 			}
 			CLRSCRN;
@@ -164,11 +166,11 @@ public:
 			getline(cin >> ws, ans);
 			CLRSCRN;
 
-			cout << "Enter the amount:\n";
+			cout << "Enter the salary:\n";
 			cin >> salary;
 			while (!Validation::checkSal(salary))
 			{
-				cout << "Enter the amount:\n";
+				cout << "Enter the salary:\n";
 				cin >> salary;
 			}
 			CLRSCRN;

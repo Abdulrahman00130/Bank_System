@@ -11,6 +11,8 @@ protected:
 	static int searchEmployee(int emID)
 	{
 		// binary search (id sorted)
+        if (emptyVect<Employee>(employeeVect))
+            return -1;
 
 		int start{};
 		int ends = employeeVect.size() - 1;
@@ -93,11 +95,11 @@ public:
 			getline(cin >> ws, ans);
 			CLRSCRN;
 
-			cout << "Enter the amount:\n";
+			cout << "Enter the balance:\n";
 			cin >> bal;
 			while (!Validation::checkBal(bal))
 			{
-				cout << "Enter the amount:\n";
+				cout << "Enter the balance:\n";
 				cin >> bal;
 			}
 			CLRSCRN;

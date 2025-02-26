@@ -69,11 +69,6 @@ public:
 	    return choice;
 	}
 
-	static void invalid(int c)
-	{
-
-	}
-
 	static void logout()
 	{
 	    CLRSCRN;
@@ -183,8 +178,6 @@ public:
         welcome();
         myFile.getEverything();
         checkAdmin();
-        loginOptions();
-        loginScreen(loginAs());
         while(true)
             logout();
 	}
