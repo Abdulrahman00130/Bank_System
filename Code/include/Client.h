@@ -58,7 +58,7 @@ public:
 };
 
 static vector<Client> clientVect;
-static int clientLastID = 3000;
+static int clientLastID = 1000;
 
 template <typename T>
 bool emptyVect(vector<T> vect)
