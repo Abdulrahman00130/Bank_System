@@ -30,7 +30,13 @@ public:
 		ifstream read(fileName);
 		getline(read, id);
 		read.close();
-		return stoi(id);
+
+		if (id.size() > 0)
+        {
+            return stoi(id);
+        }
+        return -1;
+
 	}
 
 	static void saveClient(Client c)
@@ -67,15 +73,21 @@ public:
 		clientVect.clear();
 		Client c;
 		ifstream read("Client.txt");
-		while (!read.eof())
-		{
-			getline(read, client);
-			c = Parser::parseToClient(client);
-			clientVect.push_back(c);
-		}
+		if (!isEmpty("Client.txt"))
+        {
+            while (!read.eof())
+            {
+                getline(read, client);
+                c = Parser::parseToClient(client);
+                clientVect.push_back(c);
+            }
+        }
+
 		read.close();
 
-		clientLastID = getLast("ClientLastID.txt");
+		int id = getLast("ClientLastID.txt");
+		if(id > 0)
+            clientLastID = id;
 	}
 
 	static void getEmployees()
@@ -84,15 +96,22 @@ public:
 		employeeVect.clear();
 		Employee e;
 		ifstream read("Employee.txt");
-		while (!read.eof())
-		{
-			getline(read, employee);
-			e = Parser::parseToEmployee(employee);
-			employeeVect.push_back(e);
-		}
+		if (!isEmpty("Employee.txt"))
+        {
+            while (!read.eof())
+            {
+                getline(read, employee);
+                e = Parser::parseToEmployee(employee);
+                employeeVect.push_back(e);
+            }
+        }
+
 		read.close();
 
-		employeeLastID = getLast("EmployeeLastID.txt");
+
+		int id = getLast("EmployeeLastID.txt");
+		if(id > 0)
+            employeeLastID = id;
 	}
 
 	static void getAdmins()
@@ -101,15 +120,22 @@ public:
 		adminVect.clear();
 		Admin a;
 		ifstream read("Admin.txt");
-		while (!read.eof())
-		{
-			getline(read, admin);
-			a = Parser::parseToAdmin(admin);
-			adminVect.push_back(a);
-		}
+		if (!isEmpty("Admin.txt"))
+        {
+            while (!read.eof())
+            {
+                getline(read, admin);
+                a = Parser::parseToAdmin(admin);
+                adminVect.push_back(a);
+            }
+        }
+
 		read.close();
 
-		adminLastID = getLast("AdminLastID.txt");
+
+		int id = getLast("AdminLastID.txt");
+		if(id > 0)
+            adminLastID = id;
 	}
 
 	static void clearFile(string fileName, string lastIdFile)
@@ -120,7 +146,12 @@ public:
 
 		write.open(lastIdFile);
 		write.clear();
-		write << "0";
+		if (lastIdFile == "ClientLastID.txt")
+            write << "1000";
+        else if (lastIdFile == "EmployeeLastID.txt")
+            write << "2000";
+        else if (lastIdFile == "AdminLastID.txt")
+            write << "3000";
 		write.close();
 	}
 };

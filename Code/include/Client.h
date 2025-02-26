@@ -58,6 +58,15 @@ public:
 };
 
 static vector<Client> clientVect;
-static int clientLastID;
+static int clientLastID = 3000;
+
+template <typename T>
+bool emptyVect(vector<T> vect)
+{
+    if (vect.size() == 0)
+        return true;
+
+    return false;
+}
 
 #endif // CLIENT_H

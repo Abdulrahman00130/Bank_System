@@ -10,9 +10,12 @@ class ClientManger
 {
 private:
 
+
 	static int searchClient(int clID)
 	{
 		// binary search (id sorted)
+        if (emptyVect<Client>(clientVect))
+            return -1;
 
 		int start{};
 		int ends = clientVect.size() - 1;

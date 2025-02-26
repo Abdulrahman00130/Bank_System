@@ -9,6 +9,19 @@ FileManager myFile;
 
 class Screens
 {
+
+private:
+    static void checkAdmin()
+    {
+        while (adminVect.size() == 0)
+        {
+            cout << "The system has no admin\n";
+            cout << "Adding an admin\n\n";
+            AdminManager::newAdmin();
+        }
+        myFile.saveEverything();
+    }
+
 public:
 	static void bankName()
 	{
@@ -56,11 +69,6 @@ public:
 	    return choice;
 	}
 
-	static void invalid(int c)
-	{
-
-	}
-
 	static void logout()
 	{
 	    CLRSCRN;
@@ -84,45 +92,63 @@ public:
         switch(c)
         {
         case 1:
-            index = ClientManger::login(id, pass);
-
-            if (index < 0)
+            if (clientVect.size() == 0)
             {
-                cout << "ID or password is incorrect\n";
-                cin.ignore();
+                cout << "No clients yet\n";
                 cout << "\nPress Enter to continue...\n";
                 cin.get();
             }
             else
             {
-                CLRSCRN;
-                ClientManger::printClientMenu();
-                while (!ClientManger::clientOptions(index))
-                    ClientManger::printClientMenu();
+                index = ClientManger::login(id, pass);
 
-                myFile.saveEverything();
+                if (index < 0)
+                {
+                    cout << "ID or password is incorrect\n";
+                    cout << "\nPress Enter to continue...\n";
+                    cin.get();
+                }
+                else
+                {
+                    CLRSCRN;
+                    ClientManger::printClientMenu();
+                    while (!ClientManger::clientOptions(index))
+                        ClientManger::printClientMenu();
+
+                    myFile.saveEverything();
+                }
             }
+
             break;
 
             case 2:
-            index = EmployeeManager::login(id, pass);
+                if (employeeVect.size() == 0)
+                {
+                    cout << "No employees yet\n";
+                    cout << "\nPress Enter to continue...\n";
+                    cin.get();
+                }
+                else
+                {
+                    index = EmployeeManager::login(id, pass);
 
-            if (index < 0)
-            {
-                cout << "ID or password is incorrect\n";
-                cin.ignore();
-                cout << "\nPress Enter to continue...\n";
-                cin.get();
-            }
-            else
-            {
-                CLRSCRN;
-                EmployeeManager::printEmployeMenu();
-                while (!EmployeeManager::employeeOptions(index))
-                    EmployeeManager::printEmployeMenu();
+                    if (index < 0)
+                    {
+                        cout << "ID or password is incorrect\n";
+                        cout << "\nPress Enter to continue...\n";
+                        cin.get();
+                    }
+                    else
+                    {
+                        CLRSCRN;
+                        EmployeeManager::printEmployeMenu();
+                        while (!EmployeeManager::employeeOptions(index))
+                            EmployeeManager::printEmployeMenu();
 
-                myFile.saveEverything();
-            }
+                        myFile.saveEverything();
+                    }
+                }
+
             break;
 
             case 3:
@@ -131,7 +157,6 @@ public:
             if (index < 0)
             {
                 cout << "ID or password is incorrect\n";
-                cin.ignore();
                 cout << "\nPress Enter to continue...\n";
                 cin.get();
             }
@@ -152,8 +177,7 @@ public:
 	{
         welcome();
         myFile.getEverything();
-        loginOptions();
-        loginScreen(loginAs());
+        checkAdmin();
         while(true)
             logout();
 	}

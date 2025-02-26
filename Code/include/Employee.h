@@ -75,7 +75,8 @@ public:
     int searchClient(int clID)
     {
       // binary search (id sorted)
-
+      if (emptyVect<Client>(clientVect))
+            return -1;
       int start{};
       int ends = clientVect.size() - 1;
       int mid{};
@@ -171,6 +172,6 @@ public:
 };
 
 static vector<Employee> employeeVect;
-static int employeeLastID;
+static int employeeLastID = 2000;
 
 #endif // EMPLOYEE_H

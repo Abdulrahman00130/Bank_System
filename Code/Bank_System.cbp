@@ -35,14 +35,17 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/Admin.h" />
+		<Unit filename="include/AdminManager.h" />
 		<Unit filename="include/Client.h" />
 		<Unit filename="include/ClientManger.h" />
 		<Unit filename="include/DataSourceInterface.h" />
 		<Unit filename="include/Employee.h" />
+		<Unit filename="include/EmployeeManager.h" />
 		<Unit filename="include/FileManager.h" />
 		<Unit filename="include/FilesHelper.h" />
 		<Unit filename="include/Parser.h" />
 		<Unit filename="include/Person.h" />
+		<Unit filename="include/Screens.h" />
 		<Unit filename="include/Validation.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Globals.cpp" />
