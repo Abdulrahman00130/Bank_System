@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1740433555 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
+1740438357 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\main.cpp
 	"Screens.h"
 
-1740411785 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\filemanager.h
+1740530564 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\filemanager.h
 	"DataSourceInterface.h"
 	"FilesHelper.h"
 
@@ -10,10 +10,10 @@
 	"Admin.h"
 	"Client.h"
 
-1740415779 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
+1740528834 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\admin.h
 	"Employee.h"
 
-1740409358 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
+1740528839 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employee.h
 	<vector>
 	"Client.h"
 	<cstdlib>
@@ -25,11 +25,11 @@
 	<iostream>
 	<string>
 
-1740269304 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
+1740528818 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\client.h
 	<vector>
 	"Person.h"
 
-1740165819 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\fileshelper.h
+1740531240 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\fileshelper.h
 	"Parser.h"
 	<fstream>
 
@@ -38,26 +38,26 @@
 	"Client.h"
 	"Admin.h"
 
-1740166697 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\parser.h
+1740531022 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\parser.h
 	"Admin.h"
 
 1739563145 source:d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\src\globals.cpp
 	"Globals.h"
 
-1740409369 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
+1740436255 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\clientmanger.h
 	"Client.h"
 	<cstdlib>
 
-1740433908 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\screens.h
+1740532601 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\screens.h
 	<windows.h>
 	"AdminManager.h"
 	"FileManager.h"
 
-1740416401 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\adminmanager.h
+1740529842 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\adminmanager.h
 	"Admin.h"
 	"EmployeeManager.h"
 
-1740415351 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employeemanager.h
+1740436281 d:\courses\route programming fundamentals\project 2 - bank system\repo\bank_system\code\include\employeemanager.h
 	"Employee.h"
 	"ClientManger.h"
 

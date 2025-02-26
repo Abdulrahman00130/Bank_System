@@ -171,6 +171,6 @@ public:
 };
 
 static vector<Employee> employeeVect;
-static int employeeLastID;
+static int employeeLastID = 2000;
 
 #endif // EMPLOYEE_H

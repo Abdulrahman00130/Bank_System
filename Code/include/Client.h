@@ -58,6 +58,6 @@ public:
 };
 
 static vector<Client> clientVect;
-static int clientLastID;
+static int clientLastID = 3000;
 
 #endif // CLIENT_H

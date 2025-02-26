@@ -119,6 +119,74 @@ public:
 		CLRSCRN;
 	}
 
+	static void newAdmin()
+	{
+		char choice{};
+		int age{};
+		string name, pass, ques, ans;
+		double salary{};
+
+		cout << "The minimum salary limit is 5000\n";
+		cout << "Continue? (y/n)\n";
+		cin >> choice;
+
+		if (choice == 'y' || choice == 'Y')
+		{
+			CLRSCRN;
+			cout << "Enter admin name:\n";
+			getline(cin >> ws, name);
+			while (!Validation::checkName(name))
+			{
+				cout << "Enter admin name:\n";
+				getline(cin >> ws, name);
+			}
+			CLRSCRN;
+
+			cout << "Enter admin age:\n";
+			cin >> age;
+			CLRSCRN;
+
+			cout << "Enter admin password:\n";
+			cin.ignore();
+			getline(cin >> ws, pass);
+			while (!Validation::checkPass(pass))
+			{
+				cout << "Enter admin password:\n";
+				getline(cin >> ws, pass);
+			}
+			CLRSCRN;
+
+			cout << "Enter admin question:\n";
+			getline(cin >> ws, ques);
+			CLRSCRN;
+
+			cout << "Enter admin answer:\n";
+			getline(cin >> ws, ans);
+			CLRSCRN;
+
+			cout << "Enter the amount:\n";
+			cin >> salary;
+			while (!Validation::checkSal(salary))
+			{
+				cout << "Enter the amount:\n";
+				cin >> salary;
+			}
+			CLRSCRN;
+
+			Admin ad(name, pass, ques, ans, adminLastID + 1, age, salary);
+			adminVect.push_back(ad);
+			adminLastID++;
+
+			cout << "Admin account created successfully\n";
+			cout << "Admin's ID: " << ad.getID() << endl;
+
+			cin.ignore();
+			cout << "\nPress Enter to continue...\n";
+			cin.get();
+		}
+		CLRSCRN;
+	}
+
 	static void listAllEmployees(Admin& admin)
 	{
 		admin.listEmployee();

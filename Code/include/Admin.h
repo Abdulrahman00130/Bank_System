@@ -41,9 +41,9 @@ class Admin : public Employee
               {
                   start = mid + 1;
               }
-              if (ends < start) 
+              if (ends < start)
                   return -1;
-              
+
           }
           //add remove one employee function to employee
         }
@@ -129,5 +129,5 @@ class Admin : public Employee
 
 };
 static vector<Admin> adminVect;
-static int adminLastID;
+static int adminLastID = 3000;
 #endif // ADMIN_H
